@@ -1,33 +1,101 @@
 
 body {
-    padding: 0 auto;
-    margin: 0 auto;
+    scroll-behavior: smooth;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
-.container {
-    width: 80%;
-    height: 100vh;
-    margin: 0 auto;
-    border: blue;
-    border-width: 2px;
-    background-color: red;
+body #form label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    gap: 30px;
 }
 
 .container #form {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-bottom: 50px;
+    border: #007acc;
+    border-color: black;
+    
+    /* border: #007acc 1px solid ; */
+}
+
+.container #form input {
+    height:  40px;
+    border-radius: 10px;
+    border: white 1px solid;
+    padding: 0 15px;
+}
+
+.container #form input[type='submit'] {
+    width: 50px;
+    background-color: #8615d1;
+    color: white;
+    border: white 2px solid;
+    box-shadow: 0cap;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.container #task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .container #tasks {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 10px;
     flex-direction: column;
+    max-width: 500px;
+    min-width: 500px;
+
+}
+
+.container #tasks .task {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.container #tasks .task #taskname {
+    color: white;
+}
+
+
+.container #tasks .task .delete {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(194, 19, 19);
+    border-radius: 100px;
+    border: white 1px solid;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.delete {
+    width: 50px;
+    height: 50px;
 }

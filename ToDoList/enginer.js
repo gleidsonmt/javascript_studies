@@ -1,13 +1,14 @@
 
+let acc = 0;
 
 document.querySelector('#push').onclick = function() {
 
     var input = document.querySelector('#form input');
-
+    
     if (input.value.length == 0) {
         alert('Please Enter a Task')
     } else {
-        var tasks = document.querySelector('#tasks');
+        let tasks = document.querySelector('#tasks');
 
         tasks.innerHTML +=
             `
@@ -20,16 +21,21 @@ document.querySelector('#push').onclick = function() {
                     </button>
                 </div>
             `;
+
+        var current = document.querySelectorAll('.delete')
+
+        for(var i = 0; i < current.length; i++) {
+            current[i].onclick = function() {
+                this.parentNode.remove();
+            }
+        }
+
+        let tk = document.querySelectorAll('.task');
+
+        for(var i = 0; i < tk.length; i++) {
+           tk[i].onclick = function() {
+                this.classList.toggle('completed')
+           }
+        }
     }
-}
-
-function remove() {
-    var tasks = document.querySelector('#tasks'); // tasks parent
-    var arr = tasks.querySelectorAll('.task'); // children 
-
-    arr.forEach( (el) => {
-        console.log(el)
-        tasks.removeChild(el);
-    })
-
 }
