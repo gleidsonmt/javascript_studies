@@ -1,0 +1,36 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    gap: 40px;
+}
+
+
+main input[type='text'] {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    border: solid 2px gray;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14pt;
+}
+
+main input[type='text']:focus {
+    border: solid 2px blue;
+}
+
+main label {
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
