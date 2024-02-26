@@ -18,13 +18,6 @@ function copy() {
     })
 }
 
-// let textoCopiado = document.getElementById("texto");
-// textoCopiado.select();
-// textoCopiado.setSelectionRange(0, 99999)
-// document.execCommand("copy");
-// alert("O texto é: " + textoCopiado.value);
-
-
 function rot13(encrypt, str) {
 
     let alphabet = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L' , 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
@@ -39,7 +32,6 @@ function rot13(encrypt, str) {
   
           if (encrypt) {
             if (index + 13 <= 25) {
-                      console.log(el)
                 swap.push(alphabet[index + 13])
             } else {
                 swap.push(alphabet[index - 13])
