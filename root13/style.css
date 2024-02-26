@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main label {
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+textarea {
+    font-size: 12pt;
+    max-width: 300px;
+}
+
+textarea {
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+}
+
+button {
+    padding: 15px;
+    cursor: pointer;
+    background-color: white;
+    border: solid 2px gray;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    font-size: 14pt;
+}
+
+button:focus {
+    border: solid 2px #007acc;
+}
+
+button:active {
+    background-color: #007acc;
+    color: white;
+}
+
+
+/* border: solid 2px #007acc; */

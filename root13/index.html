@@ -1,0 +1,23 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script> window.onload = () => convertLeftSide(); </script>
+    
+</head>
+<body>
+    <main>
+        <label for="" class="title">Encriptador de Texto</label>
+        <div class="content">
+            <textarea id="left-side" oninput="convertLeftSide()">Texto Normal</textarea>
+            <textarea id="right-side" oninput='convertRightSide()' class="copy-text">Texto Encriptado</textarea>
+        </div>
+        <button onclick="copy()">Copiar</button>
+    </main>
+<script src="engine.js"></script>
+
+</body>
+</html>

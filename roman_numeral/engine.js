@@ -1,4 +1,4 @@
-let label = document.querySelector('label')
+let label = document.querySelector('.converted')
 let input = document.querySelector('input')
 
 function getInput() {
